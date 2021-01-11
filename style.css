@@ -43,7 +43,9 @@ p {
 a {
   text-decoration: none;
 }
-
+.button:hover {
+  animation: jiggle 0.5s infinite linear;
+}
 .btn {
   color: #fafafa;
   padding: 0.5rem 1rem;
@@ -64,5 +66,17 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(0deg) scale(1.15, 1.15);
+  }
+  50% {
+    transform: rotate(2deg) scale(1.15, 1.15);
+  }
+  100% {
+    transform: rotate(-2deg) scale(1.15, 1.15);
   }
 }
