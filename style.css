@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  color: #fafafa;
+  background-color: #34558b;
+  text-align: center;
+}
+
+.wrapper {
+  padding: 5rem;
+  text-align: left;
+}
+
+.error {
+  font-size: 14rem;
+  margin-left: 10%;
+  font-weight: 600;
+  opacity: 0;
+  animation: 2s opa 0.5s forwards;
+}
+
+.error_messege {
+  font-weight: 400;
+  opacity: 0;
+  animation: 2s opa 0.5s forwards;
+  animation-delay: 1s;
+}
+p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2rem;
+  opacity: 0;
+  animation: 1s opa 2s forwards;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  color: #fafafa;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  border: 1px solid;
+  border-radius: 9000px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #fafafa;
+  color: #34558b;
+}
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
