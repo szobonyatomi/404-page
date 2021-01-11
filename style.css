@@ -29,7 +29,7 @@ body {
 .error_messege {
   font-weight: 400;
   opacity: 0;
-  animation: 2s opa 0.5s forwards;
+  animation: 1s opa forwards;
   animation-delay: 1s;
 }
 p {
@@ -43,8 +43,14 @@ p {
 a {
   text-decoration: none;
 }
+.button {
+  opacity: 0;
+  animation: 2s opa 0.5s forwards;
+  animation-delay: 2.5s;
+  transition: all 0.7s ease-in-out;
+}
 .button:hover {
-  animation: jiggle 0.5s infinite linear;
+  transform: scale(1.3);
 }
 .btn {
   color: #fafafa;
@@ -66,17 +72,5 @@ a {
   }
   100% {
     opacity: 1;
-  }
-}
-
-@keyframes jiggle {
-  0% {
-    transform: rotate(0deg) scale(1.15, 1.15);
-  }
-  50% {
-    transform: rotate(2deg) scale(1.15, 1.15);
-  }
-  100% {
-    transform: rotate(-2deg) scale(1.15, 1.15);
   }
 }
